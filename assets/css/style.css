@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
@@ -614,7 +615,18 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  
+}
+.ted{
+  margin:20px;
+  box-shadow:0 10px 10px 0 rgba(0, 0, 0, 0.6);
+  background: url("assets/img/TED.png");
+  
+}
+.im{
+  margin:10px;
+  height:100px;
+  width:100px;
 }
 
 .services .icon-box .icon {
@@ -2236,4 +2248,22 @@ section {
   background: #1bbd36;
   color: #fff;
   text-decoration: none;
+}
+
+.pic{
+    height:600px;
+    width:600px;
+}
+.col-sm-12{
+    background-image:url('assets/img/ted.jpg');
+    color:white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.6);
+}
+.para{
+    margin:20px;
+}
+.container{
+    margin:20px;
 }
