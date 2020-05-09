@@ -2250,20 +2250,49 @@ section {
   text-decoration: none;
 }
 
-.pic{
-    height:600px;
-    width:600px;
+
+@media only screen and (max-width: 1025px)
+{
+  .Events{
+    margin-top:115px;
+    font-size:4rem;
+  }
 }
-.col-sm-12{
-    background-image:url('assets/img/ted.jpg');
-    color:white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.6);
+@media only screen and (min-width:1025px)
+{
+  .eventContent
+  {
+    width:60%;
+    margin:0 auto;
+  }
 }
-.para{
-    margin:20px;
+
+
+#eventsHeader{
+  text-align:center;
+  padding:30px;
+  height:400px;
+  color:white;
+  transition: ease-in-out 0.5s;
 }
-.container{
-    margin:20px;
+.Events{
+  margin-top:115px;
+  font-size:6rem;
+}
+.InHead{
+  margin-top:70px;
+  text-align:center;
+  font-weight: bold;
+}
+.inPara{
+  line-height: 2;
+  margin:50px;
+
+  text-align:justify;
+}
+.breaker{
+  
+   margin-top:50px; 
+   width:50%;
+   
 }
