@@ -25,6 +25,11 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
+@font-face{
+  font-family: "myFirstFont";
+  src: url(fonts\fontawesome-webfont.eot);
+  
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -343,6 +348,7 @@ h1, h2, h3, h4, h5, h6 {
   .header-social-links {
     padding: 0 48px 0 0;
     border-left: 0;
+
   }
 }
 
@@ -517,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
-}
+    fo;}
 
 .section-bg {
   background-color: #f7f7f7;
@@ -913,6 +919,17 @@ section {
 
 .about-us .content p:last-child {
   margin-bottom: 0;
+}
+.about-us p{
+  font-size: larger;
+  font-family: "myFirstFont";
+}
+@media(max-width:980px)
+{
+  .about-us p{
+    font-size: larger;
+    font-family: "myFirstFont";
+  }
 }
 
 /*--------------------------------------------------------------
