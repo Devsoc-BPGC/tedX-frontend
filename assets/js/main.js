@@ -293,6 +293,9 @@ for (let i = 0; i < newblogPosts.length; i++) {
                         </ul>
                       </div>
 
+
+})(jQuery);
+
                       <div class="entry-content">
                         <p class="blog-content">${newblogPosts[i].content}</p>
                         <div class="read-more">
@@ -302,3 +305,4 @@ for (let i = 0; i < newblogPosts.length; i++) {
                     </article>`;
   $("#blog-content").append(blogContent);
 }
+
