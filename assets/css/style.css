@@ -1019,6 +1019,21 @@ section {
   opacity: 1;
 }
 
+#team .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.img-fluid {
+  height: 250px;
+}
+
+.container .row .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*--------------------------------------------------------------
 # Our Skills
 --------------------------------------------------------------*/
