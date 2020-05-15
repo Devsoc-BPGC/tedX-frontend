@@ -163,3 +163,61 @@
   aos_init();
 
 })(jQuery);
+
+//Team page
+var  team_name= document.getElementsByClassName("member-info");
+var team_photo=document.getElementsByClassName("member-img");
+var team_social=document.getElementsByClassName("social");
+var names = [],photos=[], socials=[];
+[].push.apply(names, team_name);
+[].push.apply(photos, team_photo);
+[].push.apply(socials, team_social);
+
+team = [
+    {
+      POR:"Coordinator",
+      photo: "assets/img/team/coordinator.png",
+      naam: "Manav Suresh",
+      email:"manavsuresh16@gmail.com",
+      insta:"https://www.instagram.com/manav_suresh/",
+      fb:"https://www.facebook.com/manav.suresh",
+      mob:"+919987946845"
+    },
+    {
+        POR:"Licensee",
+        photo: "assets/img/team/licensee.png",
+        naam: "Anjani Nair",
+        email:"anjaninair1026@gmail.com",
+        insta:"https://www.instagram.com/anjin2610/",
+        fb:"https://www.facebook.com/anjani.nair.31",
+        mob:"+919765676066"
+    },
+    {
+        POR:"Curator",
+        photo: "assets/img/team/curator.png",
+        naam: "Zain Zafar",
+        email:"zafarzain001@gmail.com",
+        insta:"https://www.instagram.com/zain.zaf/",
+        fb:"https://www.facebook.com/zain.zafar.182",
+        mob:"+917739902694"
+    }  
+];
+
+for(var i=0;i<names.length;i++)
+{
+    names[i].children[0].innerHTML=team[i].naam;
+    names[i].children[1].innerHTML=team[i].POR;
+    socials[i].children[0].href="mailto:"+team[i].email;
+    socials[i].children[1].href=team[i].fb;
+    socials[i].children[2].href=team[i].insta;
+    socials[i].children[3].href="tel:"+team[i].mob;
+    photos[i].children[0].src=team[i].photo;
+    
+}
+
+var team_des="Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+document.getElementById("team_des").innerHTML=team_des;
+
+
+
+ 
