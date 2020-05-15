@@ -55,6 +55,21 @@
     }
   });
 
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 400) {
+    $('#header').css('background','white');
+    $('#header').css('box-shadow','0px 2px 15px rgba(0, 0, 0, 0.1)');
+    $('.nav-links').css('color','#000');
+    $('#logo').attr('src','assets/img/logo_black.png');
+    $('#logo').css('max-height','55px');
+    } else {
+    $('#header').css('background','transparent');
+    $('.nav-links').css('color','#fff');
+    $('#header').css('box-shadow','0px 0px 0px rgba(0, 0, 0, 0)');
+    $('#logo').attr('src','assets/img/logo_white.png');
+    $('#logo').css('max-height','30px');
+    }
+    });
   // Mobile Navigation
   if ($(".nav-menu").length) {
     var $mobile_nav = $(".nav-menu").clone().prop({
@@ -295,109 +310,6 @@ for (let i = 0; i < newblogPosts.length; i++) {
 
 
 })(jQuery);
-
-const blogPosts = [
-  {
-    title:
-      "Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia reiciendis",
-    image: "assets/img/blog-1.jpg",
-    author: "John Doe",
-    date: "2020-01-01",
-    totalComments: 12,
-    content:
-      "Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.",
-  },
-  {
-    title: "Nisi magni odit consequatur autem nulla dolorem",
-    image: "assets/img/blog-2.jpg",
-    author: "John Doe",
-    date: "2019-01-01",
-    totalComments: 12,
-    content:
-      "Incidunt voluptate sit temporibus aperiam. Quia vitae aut sint ullam quis illum voluptatum et. Quo libero rerum voluptatem pariatur nam. Ad impedit qui officiis est in non aliquid veniam laborum. Id ipsum qui aut. Sit aliquam et quia molestias laboriosam. Tempora nam odit omnis eum corrupti qui aliquid excepturi molestiae. Facilis et sint quos sed voluptas. Maxime sed tempore enim omnis non alias odio quos distinctio.",
-  },
-  {
-    title:
-      "Possimus soluta ut id suscipit ea ut. In quo quia et soluta libero sit sint.",
-    image: "assets/img/blog-3.jpg",
-    author: "John Doe",
-    date: "2018-01-01",
-    totalComments: 12,
-    content:
-      "Aut iste neque ut illum qui perspiciatis similique recusandae non. Fugit autem dolorem labore omnis et. Eum temporibus fugiat voluptate enim tenetur sunt omnis. Doloremque est saepe laborum aut. Ipsa cupiditate ex harum at recusandae nesciunt. Ut dolores velit.",
-  },
-  {
-    title:
-      "Non rem rerum nam cum quo minus. Dolor distinctio deleniti explicabo eius exercitationem. Veniam eius velit ab ipsa quidem rem.",
-    image: "assets/img/blog-4.jpg",
-    author: "John Doe",
-    date: "2017-01-01",
-    totalComments: 12,
-    content:
-      "Aspernatur rerum perferendis et sint. Voluptates cupiditate voluptas atque quae. Rem veritatis rerum enim et autem. Saepe atque cum eligendi eaque iste omnis a qui. Quia sed sunt. Ea asperiores expedita et et delectus voluptates rerum. Id saepe ut itaque quod qui voluptas nobis porro rerum. Quam quia nesciunt qui aut est non omnis. Inventore occaecati et quaerat magni itaque nam voluptas. Voluptatem ducimus sint id earum ut nesciunt sed corrupti nemo.",
-  },
-];
-
-let newblogPosts = blogPosts.sort((a, b) => {
-  return new Date(b.date) - new Date(a.date);
-});
-
-for (let i = 0; i < newblogPosts.length; i++) {
-  let blogContent = `<article class="entry" data-aos="fade-up">
-                      <div class="entry-img">
-                        <img src="${
-                          newblogPosts[i].image
-                        }" alt="" class="img-fluid blog-image" />
-                      </div>
-                      <h2 class="entry-title">
-                        <a href="blog-single.html" class="blog-content-title">${
-                          newblogPosts[i].title
-                        }</a>
-                      </h2>
-                      <div class="entry-meta">
-                        <ul>
-                          <li class="d-flex align-items-center">
-                            <i class="icofont-user"></i>
-                            <a
-                              href="blog-single.html"
-                              class="blog-content-author"
-                            >${newblogPosts[i].author}</a>
-                          </li>
-                          <li class="d-flex align-items-center">
-                            <i class="icofont-wall-clock"></i>
-                            <a href="blog-single.html"
-                              ><time
-                                datetime="2020-01-01"
-                                class="blog-content-date"
-                              >${new Intl.DateTimeFormat("en-US", {
-                                year: "numeric",
-                                month: "short",
-                                day: "2-digit",
-                              }).format(
-                                new Date(Date.parse(newblogPosts[i].date))
-                              )}</time
-                            ></a>
-                          </li>
-                          <li class="d-flex align-items-center">
-                            <i class="icofont-comment"></i>
-                            <a
-                              href="blog-single.html"
-                              class="blog-content-totalComments"
-                            >${newblogPosts[i].totalComments + " Comments"}</a>
-                          </li>
-                        </ul>
-                      </div>
-
-
-                      <div class="entry-content">
-                        <p class="blog-content">${newblogPosts[i].content}</p>
-                        <div class="read-more">
-                          <a href="blog-single.html">Read More</a>
-                        </div>
-                      </div>
-                    </article>`;
-  $("#blog-content").append(blogContent);
-}
 
 
 
