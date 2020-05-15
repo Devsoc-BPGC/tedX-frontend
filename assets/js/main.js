@@ -55,6 +55,21 @@
     }
   });
 
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 400) {
+    $('#header').css('background','white');
+    $('#header').css('box-shadow','0px 2px 15px rgba(0, 0, 0, 0.1)');
+    $('.nav-links').css('color','#000');
+    $('#logo').attr('src','assets/img/logo_black.png');
+    $('#logo').css('max-height','55px');
+    } else {
+    $('#header').css('background','transparent');
+    $('.nav-links').css('color','#fff');
+    $('#header').css('box-shadow','0px 0px 0px rgba(0, 0, 0, 0)');
+    $('#logo').attr('src','assets/img/logo_white.png');
+    $('#logo').css('max-height','30px');
+    }
+    });
   // Mobile Navigation
   if ($(".nav-menu").length) {
     var $mobile_nav = $(".nav-menu").clone().prop({
