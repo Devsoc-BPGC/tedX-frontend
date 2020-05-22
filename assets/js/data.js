@@ -1,53 +1,52 @@
 //add speakers data in bellow array
 
-const data = [
-  {
+const data = [{
     id: 1,
-    pic: "./assets/speakers/1.jpg",
-    name: "Sample",
+    pic: "./assets/speakers/2.jpg",
+    name: "Elli Avrram",
     info: "Year 2010"
   },
   {
     id: 2,
-    pic: "./assets/speakers/2.jpg",
-    name: "Elli AvrRam",
+    pic: "./assets/speakers/5.jpg",
+    name: "Viraj Ghelani",
     info: "Year 2020"
   },
   {
     id: 3,
-    pic: "./assets/speakers/3.jpg",
-    name: "Arpit",
-    info: "Year 2020"
+    pic: "./assets/speakers/18.jpg",
+    name: "Kirti Kulhari",
+    info: "Year 2019"
   },
   {
     id: 4,
-    pic: "./assets/speakers/4.jpg",
-    name: "Archis Patil",
-    info: "Year 2020"
+    pic: "./assets/speakers/15.jpg",
+    name: "Naveen Polishetty",
+    info: "Year 2018"
   },
   {
     id: 5,
-    pic: "./assets/speakers/5.jpg",
-    name: "Viraj Gehlani",
-    info: "Year 2020"
+    pic: "./assets/speakers/12.jpg",
+    name: "Sumeet Vyas",
+    info: "Year 2017"
   },
   {
     id: 6,
-    pic: "./assets/speakers/6.jpg",
-    name: "Arpit",
-    info: "Year 2020"
+    pic: "./assets/speakers/11.jpg",
+    name: "Piyush Mishra",
+    info: "Year 2017"
   },
   {
     id: 7,
-    pic: "./assets/speakers/7.jpg",
-    name: "Rajan Singh",
-    info: "Year 2020"
+    pic: "./assets/speakers/16.jpg",
+    name: "Kajal Agarwal",
+    info: "Year 2018"
   },
   {
     id: 8,
-    pic: "./assets/speakers/8.jpg",
-    name: "Anil Lamba",
-    info: "Year 2020"
+    pic: "./assets/speakers/14.jpg",
+    name: "Aadar Malik",
+    info: "Year 2018"
   },
   {
     id: 9,
@@ -176,11 +175,11 @@ const buildspeakerCard = (speaker, component) => {
 if (document.getElementsByClassName("row1").length) {
   data.forEach(speaker => buildspeakerCard(speaker, ".row1"));
 } else
-data.slice(0,8).forEach(speaker => buildspeakerCard(speaker, ".rowHome"));
+  data.slice(0, 8).forEach(speaker => buildspeakerCard(speaker, ".rowHome"));
 
 
 
-  // function fu() {
-  //   var opened = window.open("");
-  //   opened.document.write("<html><head><title>MyTitle</title></head><body>test</body></html>);
-  // }
+// function fu() {
+//   var opened = window.open("");
+//   opened.document.write("<html><head><title>MyTitle</title></head><body>test</body></html>);
+// }
