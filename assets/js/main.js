@@ -13,7 +13,7 @@
   ) {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -57,17 +57,17 @@
 
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 400) {
-    $('#header-home').css('background','white');
-    $('#header-home').css('box-shadow','0px 2px 15px rgba(0, 0, 0, 0.1)');
-    $('#header-home .nav-links').css('color','#000');
-    $('#header-home .logo').css('color','#000');
+      $('#header-home').css('background', 'white');
+      $('#header-home').css('box-shadow', '0px 2px 15px rgba(0, 0, 0, 0.1)');
+      $('#header-home .nav-links').css('color', '#000');
+      $('#header-home .logo').css('color', '#000');
     } else {
-    $('#header-home').css('background','transparent');
-    $('#header-home .nav-links').css('color','#fff');
-    $('#header-home').css('box-shadow','0px 0px 0px rgba(0, 0, 0, 0)');
-    $('#header-home .logo').css('color','#fff');
+      $('#header-home').css('background', 'transparent');
+      $('#header-home .nav-links').css('color', '#fff');
+      $('#header-home').css('box-shadow', '0px 0px 0px rgba(0, 0, 0, 0)');
+      $('#header-home .logo').css('color', '#fff');
     }
-    });
+  });
   // Mobile Navigation
   if ($(".nav-menu").length) {
     var $mobile_nav = $(".nav-menu").clone().prop({
@@ -125,15 +125,15 @@
     .each(function (index) {
       index === 0
         ? heroCarouselIndicators.append(
-            "<li data-target='#heroCarousel' data-slide-to='" +
-              index +
-              "' class='active'></li>"
-          )
+          "<li data-target='#heroCarousel' data-slide-to='" +
+          index +
+          "' class='active'></li>"
+        )
         : heroCarouselIndicators.append(
-            "<li data-target='#heroCarousel' data-slide-to='" +
-              index +
-              "'></li>"
-          );
+          "<li data-target='#heroCarousel' data-slide-to='" +
+          index +
+          "'></li>"
+        );
     });
 
   heroCarousel.on("slid.bs.carousel", function (e) {
@@ -161,13 +161,13 @@
   });
 
   //Explore TEDx
-  $("#explore").click(function() {
+  $("#explore").click(function () {
     var offset = -150; //Offset of 20px
 
     $('html, body').animate({
-        scrollTop: $("#about-us").offset().top + offset
+      scrollTop: $("#about-us").offset().top + offset
     }, 1000);
-});
+  });
 
   // Porfolio isotope and filter
   $(window).on("load", function () {
@@ -221,85 +221,82 @@
   aos_init();
 })(jQuery);
 
-const blogPosts = [
-  {
-    title:
-      "TEDx Blog 1",
-    image: "./assets/img/blog-1.jpg",
-    author: "Arpit Bhardwaj",
-    date: "2020-01-01",
-    totalComments: 12,
-    content:
-      "Content will appear here.",
-  },
-  {
-    title: "TEDx Blog 2",
-    image: "./assets/img/blog-2.jpg",
-    author: "John Doe",
-    date: "2019-01-01",
-    totalComments: 12,
-    content:
-      "Lite",
-  }
-];
+// const blogPosts = [
+//   {
+//     title:
+//       "TEDx Blog 1",
+//     image: "./assets/img/blog-1.jpg",
+//     author: "Arpit Bhardwaj",
+//     date: "2020-01-01",
+//     totalComments: 12,
+//     content:
+//       "Content will appear here.",
+//   },
+//   {
+//     title: "TEDx Blog 2",
+//     image: "./assets/img/blog-2.jpg",
+//     author: "John Doe",
+//     date: "2019-01-01",
+//     totalComments: 12,
+//     content:
+//       "Lite",
+//   }
+// ];
 
-let newblogPosts = blogPosts.sort((a, b) => {
-  return new Date(b.date) - new Date(a.date);
-});
+// let newblogPosts = blogPosts.sort((a, b) => {
+//   return new Date(b.date) - new Date(a.date);
+// });
 
-for (let i = 0; i < newblogPosts.length; i++) {
-  let blogContent = `<article class="entry" data-aos="fade-up">
-                      <div class="entry-img">
-      
-                        <div class="blog-image" style="background-image: url('${newblogPosts[i].image}');"> </div>
-                      </div>
+// for (let i = 0; i < newblogPosts.length; i++) {
+//   let blogContent = `<article class="entry" data-aos="fade-up">
+//                       <div class="entry-img">
+//                         <div class="blog-image" style="background-image: url('${newblogPosts[i].image}');"> </div>
+//                       </div>
 
-                      <h2 class="entry-title">
-                        <a href="blog-single.html" class="blog-content-title">${
-                          newblogPosts[i].title
-                        }</a>
-                      </h2>
+//                       <h2 class="entry-title">
+//                         <a href="blog-single.html" class="blog-content-title">${
+//     newblogPosts[i].title
+//     }
+//     </a>
+//       </h2>
 
-                      <div class="entry-meta">
-                        <ul>
-                          <li class="d-flex align-items-center">
-                            <i class="icofont-user"></i>
-                            <a
-                              href="blog-single.html"
-                              class="blog-content-author"
-                            >${newblogPosts[i].author}</a>
-                          </li>
-                          <li class="d-flex align-items-center">
-                            <i class="icofont-wall-clock"></i>
-                            <a href="blog-single.html"
-                              ><time
-                                datetime="2020-01-01"
-                                class="blog-content-date"
-                              >${new Intl.DateTimeFormat("en-US", {
-                                year: "numeric",
-                                month: "short",
-                                day: "2-digit",
-                              }).format(
-                                new Date(Date.parse(newblogPosts[i].date))
-                              )}</time
-                            ></a>
-                          </li>
-                          <li class="d-flex align-items-center">
-                            <i class="icofont-comment"></i>
-                            <a
-                              href="blog-single.html"
-                              class="blog-content-totalComments"
-                            >${newblogPosts[i].totalComments + " Comments"}</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="entry-content">
-                        <p class="blog-content">${newblogPosts[i].content}</p>
-                        <div class="read-more">
-                          <a href="blog-single.html">Read More</a>
-                        </div>
-                      </div>
-                    </article>`;
-  $("#blog-content").append(blogContent);
-}
+//       <div class="entry-meta">
+//         <ul>
+//           <li class="d-flex align-items-center">
+//             <i class="icofont-user"></i>
+//             <a
+//               href="blog-single.html"
+//               class="blog-content-author"
+//             >${newblogPosts[i].author}</a>
+//           </li>
+
+
+//           <li class="d-flex align-items-center">
+//             <i class="icofont-wall-clock"></i>
+//             <a href="blog-single.html"></a>
+//       </li>
+
+
+//       <li class="d-flex align-items-center">
+//         <i class="icofont-comment"></i>
+//         <a
+//           href="blog-single.html"
+//           class="blog-content-totalComments"
+//         >${newblogPosts[i].totalComments + " Comments"}</a>
+//       </li>
+
+
+//     </ul>
+//   </div>
+
+
+//   <div class="entry-content">
+//     <p class="blog-content">${newblogPosts[i].content}</p>
+//     <div class="read-more">
+//       <a href="blog-single.html">Read More</a>
+//     </div>
+//   </div>
+//   </article>`;
+//   $("#blog-content").append(blogContent);
+// }
 
