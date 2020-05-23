@@ -1182,6 +1182,7 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -1256,6 +1257,12 @@ section {
 
 .loader {
   width: 200px;
+}
+
+@media(max-width:575px){
+  .portfolio .portfolio-item {
+   text-align: center;    
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1426,6 +1433,10 @@ section {
 
 img.img-fluid {
   height: 250px;
+}
+
+img.img-fluid2 {
+  width: 250px;
 }
 
 .container .row .social {

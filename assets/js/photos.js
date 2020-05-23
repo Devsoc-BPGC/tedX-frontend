@@ -1,7 +1,7 @@
 const createCard = (photo, name, component) => {
   const div = document.createElement("div");
   div.setAttribute("class", "col-lg-3");
-  div.classList.add("col-md-6");
+  div.classList.add("col-sm-6");
   div.classList.add("portfolio-item");
   if (name === "Team's Snap") {
     div.classList.add("filter-card");
@@ -17,7 +17,7 @@ const createCard = (photo, name, component) => {
 
   const image = document.createElement("img");
   div.append(image);
-  image.setAttribute("class", "img-fluid");
+  image.setAttribute("class", "img-fluid2");
 
   const info = document.createElement("div");
   info.setAttribute("class", "portfolio-info");
