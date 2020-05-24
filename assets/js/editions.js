@@ -122,7 +122,7 @@ const response = [{
     speakers: ["Anand Bhaskar", "Anil Lamba", "Archis Patil", "Elli Avrram", "Jimmy Mistry", "Padmashri Saravanan", "Priya Mishra", "Rajan Singh", "Sudhir R", "Viraj Ghelani"],
     time: '22nd January, 2017',
     organizers: ["Ajinkya Deshpande (Licensee)", "Mann Verlekar (Curator)", "Shubh Khandelwal (Coordinator)"]
-}]
+}].reverse();
 
 const getEditons = () => {
     for (let index = 0; index < response.length; index++) {
