@@ -1449,6 +1449,10 @@ img.img-fluid2 {
   align-items: center;
 }
 
+.rowTeam {
+  margin-top: 30px;
+}
+
 .talk {
   text-align: center;
   margin: 50px 0;
@@ -2059,13 +2063,10 @@ img.img-fluid2 {
 }
 
 .blog .entry .entry-title a {
-  color: #111;
+  color: #c92104;
   transition: 0.3s;
 }
 
-.blog .entry .entry-title a:hover {
-  color: #c92104;
-}
 
 .blog .entry .entry-meta {
   margin-bottom: 15px;
@@ -2097,9 +2098,6 @@ img.img-fluid2 {
   transition: 0.3s;
 }
 
-.blog .entry .entry-meta a:hover {
-  color: #c92104;
-}
 
 .blog .entry .entry-content p {
   line-height: 24px;

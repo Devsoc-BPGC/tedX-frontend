@@ -13,5 +13,6 @@ axios
       document.getElementById('profile-pic').setAttribute("src", response.data.data.imageURL[0]);
       document.getElementById('about-content').innerHTML = response.data.data.description;
       document.getElementById('year').innerHTML = response.data.data.year;
+      document.getElementById('profile-link').setAttribute("href", response.data.data.imageURL[0]);
       document.title = response.data.data.name + " - TEDx BITSGoa";
     });

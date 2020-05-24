@@ -36,7 +36,7 @@ const createCard = (photo, name, component) => {
   link.setAttribute("title", name);
 
   const button = document.createElement("i");
-  button.setAttribute("class", "bx bx-plus");
+  button.setAttribute("class", "icofont-expand");
   link.append(button);
 
   image.setAttribute("src", photo);
