@@ -65,7 +65,7 @@ const getsingleBlogs = () => {
     console.log("hey");
     axios
         .get(
-            `https://tedxbackend.herokuapp.com/api/blogs/${blogId}`
+            `https://tedx-backend.herokuapp.com/api/blogs/${blogId}`
         )
         .then((response) => {
             console.log(response);

@@ -70,7 +70,7 @@ const createBlog = (photo, title, author, blogid, content) => {
 const getBlogs = () => {
     axios
         .get(
-            "https://tedxbackend.herokuapp.com/api/blogs"
+            "https://tedx-backend.herokuapp.com/api/blogs"
         )
         .then((response) => {
             for (let index = 0; index < response.data.data.length; index++) {

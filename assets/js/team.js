@@ -61,7 +61,7 @@ const buildorganizerCard = (name, photo, email, facebook, insta, info, component
 
 axios
     .get(
-    "https://tedxbackend.herokuapp.com/api/organizers"
+    "https://tedx-backend.herokuapp.com/api/organizers"
     )
     .then((response) => {
     const members = response.data.data;

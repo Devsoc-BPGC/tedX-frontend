@@ -181,7 +181,7 @@ const buildspeakerCard = (name, photo, info, component, id) => {
 const getSpeakers = () => {
   axios
     .get(
-      "https://tedxbackend.herokuapp.com/api/speakers"
+      "https://tedx-backend.herokuapp.com/api/speakers"
     )
     .then((response) => {
       for (let index = 0; index < response.data.data.length; index++) {

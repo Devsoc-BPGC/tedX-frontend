@@ -1,6 +1,6 @@
 const id = window.location.href.split('?')[1].split('=')[1];
 
-const link = 'https://tedxbackend.herokuapp.com/api/speakers/' + id;
+const link = 'https://tedx-backend.herokuapp.com/api/speakers/' + id;
 console.log(link);
 
 axios

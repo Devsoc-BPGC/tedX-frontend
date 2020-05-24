@@ -47,7 +47,7 @@ const createCard = (photo, name, component) => {
 const getPhotos = () => {
   axios
     .get(
-      "https://tedxbackend.herokuapp.com/api/albums"
+      "https://tedx-backend.herokuapp.com/api/albums"
     )
     .then((response) => {
       for (let index = 0; index < response.data.data.length; index++) {
