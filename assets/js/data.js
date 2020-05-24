@@ -185,7 +185,7 @@ const getSpeakers = () => {
     )
     .then((response) => {
       for (let index = 0; index < response.data.data.length; index++) {
-        let photo = response.data.data[index].imageURL;
+        let photo = response.data.data[index].imageURL[0];
         let name = response.data.data[index].name;
         let year = response.data.data[index].year;
         let id = response.data.data[index]._id;
