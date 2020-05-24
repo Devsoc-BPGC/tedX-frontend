@@ -74,12 +74,12 @@ const getBlogs = () => {
         )
         .then((response) => {
             for (let index = 0; index < response.data.data.length; index++) {
-                let photo = response.data.data[0].imageURL;
+                let photo = response.data.data[index].imageURL;
                 console.log(response);
-                let title = response.data.data[0].title;
-                let author = response.data.data[0].author;
-                let content = response.data.data[0].content;
-                let blogid = response.data.data[0]._id;
+                let title = response.data.data[index].title;
+                let author = response.data.data[index].author;
+                let content = response.data.data[index].content;
+                let blogid = response.data.data[index]._id;
                 createBlog(photo, title, author, blogid, content);
             }
         });

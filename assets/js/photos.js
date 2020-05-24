@@ -47,19 +47,29 @@ const createCard = (photo, name, component) => {
 const getPhotos = () => {
   axios
     .get(
-      "https://cors-anywhere.herokuapp.com/https://tedxbackend.herokuapp.com/api/albums"
+      "https://tedxbackend.herokuapp.com/api/albums"
     )
     .then((response) => {
       for (let index = 0; index < response.data.data.length; index++) {
-        let photos = response.data.data[0].imageURL;
+        let photos = response.data.data[index].imageURL;
         console.log(response);
-        let category = response.data.data[0].name;
-        photos.forEach((element) => {
-          createCard(element, category, ".portfolio-container");
-        });
-        document
-          .querySelector(".loader")
-          .setAttribute("style", "display : none");
+        let category = response.data.data[index].name;
+        console.log(document.getElementsByClassName("row1").length);
+        if (document.getElementsByClassName("row1").length) {
+          photos.forEach((element) => {
+            createCard(element, category, ".portfolio-container");
+            document
+              .querySelectorAll(".loader")[0]
+              .setAttribute("style", "display : none");
+          });
+        } else {
+          photos.slice(0, 8).forEach((element) => {
+            createCard(element, category, ".portfolio-container-home");
+            document
+              .querySelectorAll(".loader")[1]
+              .setAttribute("style", "display : none");
+          });
+        }
       }
     });
 };

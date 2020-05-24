@@ -124,8 +124,7 @@
 
 
 //the bellow code will add a new speaker card for every speaker in speakers array
-const buildspeakerCard = (name, photo, info, component) => {
-  console.log(1);
+const buildspeakerCard = (name, photo, info, component, id) => {
   const div = document.createElement("div");
   div.setAttribute("class", "col-lg-3");
   div.classList.add("col-md-6");
@@ -153,7 +152,8 @@ const buildspeakerCard = (name, photo, info, component) => {
 
   const a = document.createElement("a");
   div3.append(a);
-  a.setAttribute("href", name + ".html");
+  const link = "./speaker-single.html?id=" + id;
+  a.setAttribute("href", link);
   a.innerHTML = "Visit Speaker Page";
 
   const div4 = document.createElement("div");
@@ -185,14 +185,19 @@ const getSpeakers = () => {
     )
     .then((response) => {
       for (let index = 0; index < response.data.data.length; index++) {
-        let photo = response.data.data[0].imageURL;
-        console.log(response);
-        let name = response.data.data[0].name;
-        let year = response.data.data[0].year;
-        buildspeakerCard(name, photo, year, ".row1");
+        let photo = response.data.data[index].imageURL;
+        let name = response.data.data[index].name;
+        let year = response.data.data[index].year;
+        let id = response.data.data[index]._id;
+        if (document.getElementsByClassName("row1").length) {
+          buildspeakerCard(name, photo, year, ".row1", id);
+        } else buildspeakerCard(name, photo, year, ".rowHome", id);
+
       }
+      document
+        .querySelector(".loader")
+        .setAttribute("style", "display : none");
     });
 };
 
 getSpeakers();
-

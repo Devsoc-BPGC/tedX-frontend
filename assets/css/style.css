@@ -1157,6 +1157,10 @@ section {
   height: max-content !important;
 }
 
+.portfolio-container-home {
+  height: max-content !important;
+}
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -1259,9 +1263,9 @@ section {
   width: 200px;
 }
 
-@media(max-width:575px){
+@media(max-width:575px) {
   .portfolio .portfolio-item {
-   text-align: center;    
+    text-align: center;
   }
 }
 
@@ -1443,6 +1447,12 @@ img.img-fluid2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.talk {
+  text-align: center;
+  margin: 50px 0;
+  height: 40vw;
 }
 
 /*--------------------------------------------------------------
