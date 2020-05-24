@@ -2009,6 +2009,23 @@ img.img-fluid2 {
   padding: 0 0 0 0;
 }
 
+.photos-home {
+  min-height: 560px;
+}
+
+@media (max-width: 991px) {
+  .photos-home {
+    min-height: 1120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .photos-home {
+    min-height: 2240px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .portfolio-details .portfolio-info {
     position: static;
