@@ -22,7 +22,6 @@ const singleBlog = (photo, title, author, content) => {
 
     const a = document.createElement("a");
     a.classList.add('blog-content-title');
-    a.setAttribute("href", "blog-single.html");
     h2.append(a);
     a.innerHTML = title;
 
@@ -41,7 +40,6 @@ const singleBlog = (photo, title, author, content) => {
 
     const a1 = document.createElement("a");
     a1.classList.add('blog-content-author');
-    a1.setAttribute("href", "blog-single.html");
     a1.innerHTML = author;
     li1.append(a1);
 
