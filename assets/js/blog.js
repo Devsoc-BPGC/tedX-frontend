@@ -73,13 +73,15 @@ const getBlogs = () => {
             "https://tedx-backend.herokuapp.com/api/blogs"
         )
         .then((response) => {
-            for (let index = 0; index < response.data.data.length; index++) {
-                let photo = response.data.data[index].imageURL;
+            let blogs = response.data.data.reverse();
+            for (let index = 0; index < blogs.length; index++) {
+                console.log(blogs);
+                let photo = blogs[index].imageURL;
                 console.log(response);
-                let title = response.data.data[index].title;
-                let author = response.data.data[index].author;
-                let content = response.data.data[index].content;
-                let blogid = response.data.data[index]._id;
+                let title = blogs[index].title;
+                let author = blogs[index].author;
+                let content = blogs[index].content;
+                let blogid = blogs[index]._id;
                 createBlog(photo, title, author, blogid, content);
             }
         });
