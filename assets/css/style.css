@@ -1454,8 +1454,8 @@ img.img-fluid2 {
 
 .talk {
   text-align: center;
-  margin: 50px 0;
-  height: 40vw;
+  min-height: 40vw;
+  padding: 40px 0;
 }
 
 /*--------------------------------------------------------------

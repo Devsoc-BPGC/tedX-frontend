@@ -184,16 +184,22 @@ const getSpeakers = () => {
       "https://tedx-backend.herokuapp.com/api/speakers"
     )
     .then((response) => {
-      for (let index = 0; index < response.data.data.length; index++) {
-        let photo = response.data.data[index].imageURL[0];
-        let name = response.data.data[index].name;
-        let year = response.data.data[index].year;
-        let id = response.data.data[index]._id;
         if (document.getElementsByClassName("row1").length) {
+          for (let index = 0; index < response.data.data.length; index++) {
+            let photo = response.data.data[index].imageURL[0];
+            let name = response.data.data[index].name;
+            let year = response.data.data[index].year;
+            let id = response.data.data[index]._id;
           buildspeakerCard(name, photo, year, ".row1", id);
-        } else buildspeakerCard(name, photo, year, ".rowHome", id);
-
-      }
+        } 
+      } else {
+        for (let index = 0; index < 8; index++) {
+          let photo = response.data.data[index].imageURL[0];
+          let name = response.data.data[index].name;
+          let year = response.data.data[index].year;
+          let id = response.data.data[index]._id;
+        buildspeakerCard(name, photo, year, ".rowHome", id);
+      } }
       document
         .querySelector(".loader")
         .setAttribute("style", "display : none");

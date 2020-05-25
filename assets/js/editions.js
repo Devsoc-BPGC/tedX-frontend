@@ -120,7 +120,7 @@ const response = [{
     imageURL: 'https://lh6.googleusercontent.com/I4e2b6QbNXsACuTPZ-9pC9yr1oTHMC234kK0OoXyyeMxzIF7lYtdvRZjkPSU6mzwbUKrifUX7lz1wbwn9oiCEH7MtsYTlBkPLIgRAynm7GJlly9AIB_Kr7JZyqxBRNTzpkYEJL9nbyIMZTrCNQ',
     content: "From the discovery of fire to the invention of the incandescent light bulb, we have seen the conception of several eureka moments that have made the world a brighter place. Like the pioneers behind these innovations and inventions, we all kindle a spark within us ignited by our passion and vision; a spark that has the potential to positively impact and change the world. Like Wilfred Peterson once said “Words of encouragement fan the spark of genius into the flame of achievement”, this conference hopes to achieve exactly that. We aim to spread inspiration and encouragement by presenting to you a diverse line up of speakers, whose “eureka moments” have transformed into breakthroughs that are changing spaces around us. This TEDxBITSGoa let us celebrate the beacons of lights in our society who constantly endeavour to make this world a better place!",
     speakers: ["Anand Bhaskar", "Anil Lamba", "Archis Patil", "Elli Avrram", "Jimmy Mistry", "Padmashri Saravanan", "Priya Mishra", "Rajan Singh", "Sudhir R", "Viraj Ghelani"],
-    time: '22nd January, 2017',
+    time: '26th January, 2020',
     organizers: ["Ajinkya Deshpande (Licensee)", "Mann Verlekar (Curator)", "Shubh Khandelwal (Coordinator)"]
 }].reverse();
 
