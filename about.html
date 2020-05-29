@@ -1,244 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About - TEDx BITSGoa</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
 
-  <title>About - TEDx BITSGoa</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Company - v2.0.0
   * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <a href="index.html" class="logo mr-auto"
+          ><img
+            id="logo"
+            src="assets/img/tedx.png"
+            alt="TEDx BitsGoa"
+            class="img-fluid"
+          />BITSGoa
+          <div style="margin-top: -10px;">
+            <span style="font-size: 10px;">
+              <span style="color: #ff2b06;">x</span>
+              <span> = independently organized event</span>
+            </span>
+          </div>
+        </a>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-      <a href="index.html" class="logo mr-auto"><img id="logo" src="assets/img/tedx.png" alt="TEDx BitsGoa"
-          class="img-fluid">BITSGoa</span>
-        <div style="margin-top: -10px;"><span style="font-size: 10px;"><span style="color: #FF2B06;">x
-              = </span>
-            independently organized
-            event</span></div>
-      </a>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li class="drop-down"><a href="" class="nav-links">About</a>
-            <ul>
-              <li class="active"><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
-            </ul>
-          </li>
-
-          <li><a href="editions.html" class="nav-links">Editions</a></li>
-          <li><a href="speakers.html" class="nav-links">Speakers</a></li>
-          <li><a href="talks.html" class="nav-links">Talks</a></li>
-          <li><a href="blog.html" class="nav-links">Blog</a></li>
-          <li><a href="photos.html" class="nav-links">Photos</a></li>
-          <li><a href="events.html" class="nav-links">Events</a></li>
-
-
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>About</h2>
-          <ol>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
             <li><a href="index.html">Home</a></li>
-            <li>About</li>
-          </ol>
-        </div>
 
+            <li class="drop-down">
+              <a href="" class="nav-links">About</a>
+              <ul>
+                <li class="active"><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+              </ul>
+            </li>
+
+            <li><a href="editions.html" class="nav-links">Editions</a></li>
+            <li><a href="speakers.html" class="nav-links">Speakers</a></li>
+            <li><a href="talks.html" class="nav-links">Talks</a></li>
+            <li><a href="blog.html" class="nav-links">Blog</a></li>
+            <li><a href="photos.html" class="nav-links">Photos</a></li>
+            <li><a href="events.html" class="nav-links">Events</a></li>
+          </ul>
+        </nav>
       </div>
-    </section><!-- End Breadcrumbs -->
+    </header>
 
-    <section id="team" class="team section-bg">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2> <strong>TED<span style="text-transform: lowercase;">x</span>BITSG<span style="text-transform: lowercase;">oa</span></strong></h2>
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>About</h2>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li>About</li>
+            </ol>
+          </div>
         </div>
-        <div class="row">
-          
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <a href="./assets/img/IMG_20200126_180226.jpg" class="venobox preview-link">
-                  <img src="./assets/img/IMG_20200126_180226.jpg" class="img-fluid" alt="">
-                </a>                 </div>
-                          </div>
+      </section>
+      <!-- End Breadcrumbs -->
+
+      <section id="team" class="team section-bg">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>
+              <strong
+                >TED<span style="text-transform: lowercase;">x</span>BITSG<span
+                  style="text-transform: lowercase;"
+                  >oa</span
+                ></strong
+              >
+            </h2>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <a href="./assets/img/IMG_20200126_180108.jpg" class="venobox preview-link">
-                  <img src="./assets/img/IMG_20200126_180108.jpg" class="img-fluid" alt="">
-                </a>                 </div>
-                          </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <a href="assets\img\TEDxpressions[DoPy] (30).jpg" class="venobox preview-link">
-                  <img src="./assets/img/TEDxpressions[DoPy] (30).jpg" class="img-fluid" alt="">
-                </a>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <a
+                    href="./assets/img/IMG_20200126_180226.jpg"
+                    class="venobox preview-link"
+                  >
+                    <img
+                      src="./assets/img/IMG_20200126_180226.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <a
+                    href="./assets/img/IMG_20200126_180108.jpg"
+                    class="venobox preview-link"
+                  >
+                    <img
+                      src="./assets/img/IMG_20200126_180108.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <a
+                    href="assets\img\TEDxpressions[DoPy] (30).jpg"
+                    class="venobox preview-link"
+                  >
+                    <img
+                      src="./assets/img/TEDxpressions[DoPy] (30).jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
- 
+        </div>
+      </section>
+      <!-- About Tedx x=independtly -->
 
-                 </div>
-
-      </div>
-    </section><!-- About Tedx x=independtly -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
-        
-        <div class="row content">
-          <div class="col-lg-12 pt-4 pt-lg-0">
-            <p>
-              TEDx brings the spirit of TED’s mission of ideas worth
-               spreading to local communities around the globe. TEDx events 
-               are organised independently under a free license granted by TED 
-               and include live speakers and recorded TED talks.<br>
-               Our event is called TEDxBITSGoa, where x=independently organized TED event. At our TEDxBITSGoa event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a group. This TEDx event is independently organized.
-              TEDxBITSGoa is conducted by an exclusive team of undergraduates from BITS Pilani KK Birla Goa Campus. With a diversity of fields like design, marketing, publicity and research, the team is committed to its mission of bringing forward ideas worth sharing.
-              TEDxBITSGoa's passion and mission is to reach out to people to learn, share and discuss ideas that have the power and potential to Make A Difference in our lives and in our world.
-              <br>
-              Our target is to impress upon a diverse audience how important it is to innovate. It has grown in stature over the years and has featured people such as Kiran Bedi, Kalki Koechlin, Clinton Cerejo, Sonam Wangchuk, Sumeet Vyas, Kirti Kulhari, Viraj Ghelani, Elli Avrram </b>and many others. TEDxBITSGoa is now also officially, the oldest TEDx in India, and we here intend to keep working hard to ensure our event becomes bigger, better and more inspiring.
-              TEDxBITSGoa operates under an official license from TED.
-            </p>
+      <!-- ======= About Us Section ======= -->
+      <section id="about-us" class="about-us">
+        <div class="container" data-aos="fade-up">
+          <div class="row content">
+            <div class="col-lg-12 pt-4 pt-lg-0">
+              <p>
+                TEDx brings the spirit of TED’s mission of ideas worth spreading
+                to local communities around the globe. TEDx events are organised
+                independently under a free license granted by TED and include
+                live speakers and recorded TED talks.<br />
+                Our event is called TEDxBITSGoa, where x=independently organized
+                TED event. At our TEDxBITSGoa event, TEDTalks video and live
+                speakers will combine to spark deep discussion and connection in
+                a group. This TEDx event is independently organized. TEDxBITSGoa
+                is conducted by an exclusive team of undergraduates from BITS
+                Pilani KK Birla Goa Campus. With a diversity of fields like
+                design, marketing, publicity and research, the team is committed
+                to its mission of bringing forward ideas worth sharing.
+                TEDxBITSGoa's passion and mission is to reach out to people to
+                learn, share and discuss ideas that have the power and potential
+                to Make A Difference in our lives and in our world.
+                <br />
+                Our target is to impress upon a diverse audience how important
+                it is to innovate. It has grown in stature over the years and
+                has featured people such as
+                <b
+                  >Kiran Bedi, Kalki Koechlin, Clinton Cerejo, Sonam Wangchuk,
+                  Sumeet Vyas, Kirti Kulhari, Viraj Ghelani, Elli Avrram </b
+                >and many others. TEDxBITSGoa is now also officially, the oldest
+                TEDx in India, and we here intend to keep working hard to ensure
+                our event becomes bigger, better and more inspiring. TEDxBITSGoa
+                operates under an official license from TED.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- End About Us Section -->
 
-      </div>
-    </section><!-- End About Us Section -->
+      <!-- ======= Our Team Section ======= -->
 
-    <!-- ======= Our Team Section ======= -->
-    
-    <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row content">
-          <div class="col-lg-12 pt-4 pt-lg-0">
-            <h1> About TEDx</h1>
-            <img src="./assets/img/tedx.png" style="width: 200px; margin: 30px 0;">
-            <p><b>x= independently organised event</b></p>
-            <p>
-              In the spirit of ideas worth spreading, <b>TEDx</b> is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
-            </p>
+      <section id="about-us" class="about-us">
+        <div class="container" data-aos="fade-up">
+          <div class="row content">
+            <div class="col-lg-12 pt-4 pt-lg-0">
+              <h1>About TEDx</h1>
+              <img
+                src="./assets/img/tedx.png"
+                style="width: 200px; margin: 30px 0;"
+              />
+              <p><b>x= independently organised event</b></p>
+              <p>
+                In the spirit of ideas worth spreading, <b>TEDx</b> is a program
+                of local, self-organized events that bring people together to
+                share a TED-like experience. At a TEDx event, TED Talks video
+                and live speakers combine to spark deep discussion and
+                connection. These local, self-organized events are branded TEDx,
+                where x = independently organized TED event. The TED Conference
+                provides general guidance for the TEDx program, but individual
+                TEDx events are self-organized. (Subject to certain rules and
+                regulations.)
+              </p>
+            </div>
           </div>
         </div>
-
-      </div>
-    </section>
-    <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row content">
-          <div class="col-lg-12 pt-4 pt-lg-0">
-            <h1>About TED</h1>
-            <p>
-              TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala and Daniel Kahneman.
-              The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; TED Translators, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.
-              Follow TED on Twitter at <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> , or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a>.
-                
-            </p>
+      </section>
+      <section id="about-us" class="about-us">
+        <div class="container" data-aos="fade-up">
+          <div class="row content">
+            <div class="col-lg-12 pt-4 pt-lg-0">
+              <h1>About TED</h1>
+              <p>
+                TED is a nonprofit organization devoted to Ideas Worth
+                Spreading. Started as a four-day conference in California 30
+                years ago, TED has grown to support its mission with multiple
+                initiatives. The two annual TED Conferences invite the world's
+                leading thinkers and doers to speak for 18 minutes or less. Many
+                of these talks are then made available, free, at TED.com. TED
+                speakers have included Bill Gates, Jane Goodall, Elizabeth
+                Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck,
+                Ngozi Okonjo-Iweala and Daniel Kahneman. The annual TED
+                Conference takes place each spring in Vancouver, British
+                Columbia. TED's media initiatives include TED.com, where new TED
+                Talks are posted daily; TED Translators, which provides
+                subtitles and interactive transcripts as well as translations
+                from volunteers worldwide; the educational initiative TED-Ed.
+                TED has established The Audacious Project that takes a
+                collaborative approach to funding ideas with the potential to
+                create change at thrilling scale; TEDx, which supports
+                individuals or groups in hosting local, self- organized
+                TED-style events around the world, and the TED Fellows program,
+                helping world-changing innovators from around the globe to
+                amplify the impact of their remarkable projects and activities.
+                Follow TED on Twitter at
+                <a href="http://twitter.com/TEDTalks"
+                  >http://twitter.com/TEDTalks</a
+                >
+                , or on Facebook at
+                <a href="http://www.facebook.com/TED"
+                  >http://www.facebook.com/TED</a
+                >.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-      </div>
-    </section>
-    
-     <!-- ======= Footer ======= -->
-     <footer id="footer">
-
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
       <div class="container d-md-flex py-4">
-  
         <div class="mr-md-auto text-center text-md-left">
           <div class="copyright">
             <a href="https://devsoc.club" target="_blank">
-              <img src="./assets/img/devsoc.png" style="width: 100px;">
+              <img src="./assets/img/devsoc.png" style="width: 100px;" />
             </a>
           </div>
           <div class="credits">
-             Made with ❤️ by <a href="https://devsoc.club" target="_blank">DevSoc</a>
+            Made with ❤️ by
+            <a href="https://devsoc.club" target="_blank">DevSoc</a>
           </div>
         </div>
-  
-        <div class="social-links text-center text-md-right pt-3 pt-md-0" style="margin-top: 10px;">
-          <span style="margin-right: 10px;"> Follow <span style="color: #FF2B06;">TEDx BITSGoa</span> on</span>
-          <br>
-          <br>
+
+        <div
+          class="social-links text-center text-md-right pt-3 pt-md-0"
+          style="margin-top: 10px;"
+        >
+          <span style="margin-right: 10px;">
+            Follow <span style="color: #ff2b06;">TEDx BITSGoa</span> on</span
+          >
+          <br />
+          <br />
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/tedxbitsgoa" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/tedxbitsgoa/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/tedx-bitsgoa/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/tedxbitsgoa" class="facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/tedxbitsgoa/" class="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/tedx-bitsgoa/"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
       </div>
-    </footer><!-- End Footer -->
-  
+    </footer>
+    <!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
