@@ -1,147 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Talks - TEDx BitsGoa</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
 
-  <title>Talks - TEDx BitsGoa</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Company - v2.0.0
   * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <a href="index.html" class="logo mr-auto"
+          ><img
+            id="logo"
+            src="assets/img/tedx.png"
+            alt="TEDx BitsGoa"
+            class="img-fluid"
+          />BITSGoa
+          <div style="margin-top: -10px;">
+            <span style="font-size: 10px;">
+              <span style="color: #ff2b06;">x</span>
+              <span> = independently organized event</span>
+            </span>
+          </div>
+        </a>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-      <a href="index.html" class="logo mr-auto"><img id="logo" src="assets/img/tedx.png" alt="TEDx BitsGoa"
-          class="img-fluid">BITSGoa</span>
-        <div style="margin-top: -10px;"><span style="font-size: 10px;"><span style="color: #FF2B06;">x
-              = </span>
-            independently organized
-            event</span></div>
-      </a>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-
-          <li class="drop-down"><a href="" class="nav-links">About</a>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
-            </ul>
-          </li>
-
-          <li><a href="editions.html" class="nav-links">Editions</a></li>
-          <li><a href="speakers.html" class="nav-links">Speakers</a></li>
-          <li class="active"><a href="talks.html" class="nav-links">Talks</a></li>
-          <li><a href="blog.html" class="nav-links">Blog</a></li>
-          <li><a href="photos.html" class="nav-links">Photos</a></li>
-          <li><a href="events.html" class="nav-links">Events</a></li>
-
-
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Talks</h2>
-          <ol>
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
             <li><a href="index.html">Home</a></li>
-            <li>Talks</li>
-          </ol>
-        </div>
 
+            <li class="drop-down">
+              <a href="" class="nav-links">About</a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+              </ul>
+            </li>
+
+            <li><a href="editions.html" class="nav-links">Editions</a></li>
+            <li><a href="speakers.html" class="nav-links">Speakers</a></li>
+            <li class="active">
+              <a href="talks.html" class="nav-links">Talks</a>
+            </li>
+            <li><a href="blog.html" class="nav-links">Blog</a></li>
+            <li><a href="photos.html" class="nav-links">Photos</a></li>
+            <li><a href="events.html" class="nav-links">Events</a></li>
+          </ul>
+        </nav>
       </div>
-    </section><!-- End Breadcrumbs -->
-    <div class="container-fluid" id="eventsHeader">
-      <h1 class="Events">Talks</h1>
-    </div>
-    <div class="container-fluid" style="background-color:black">
-      <div class="eventContent">
-        <div class = 'talk'>
-          <iframe width="100%" style="margin: 50px 0; min-height: 300px; height: 55vh;" src="https://www.youtube.com/embed/1pkux2P7cnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="100%" style="margin: 50px 0; min-height: 300px; height: 55vh;" src="https://www.youtube.com/embed/zW1zrvqsPFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="100%" style="margin: 50px 0; min-height: 300px; height: 55vh;"  src="https://www.youtube.com/embed/eVsj_8SsW8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="100%" style="margin: 50px 0; min-height: 300px; height: 55vh;" src="https://www.youtube.com/embed/BjKiwONNEPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="100%" style="margin: 50px 0; min-height: 300px; height: 55vh;" src="https://www.youtube.com/embed/dqDCrbmolrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="100%" style="margin: 50px 0; min-height: 300px; height: 55vh;" src="https://www.youtube.com/embed/0vu0Pfpw_HA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </header>
+
+    <main id="main">
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Talks</h2>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li>Talks</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- End Breadcrumbs -->
+      <div class="container-fluid" id="eventsHeader">
+        <h1 class="Events">Talks</h1>
+      </div>
+      <div class="container-fluid" style="background-color: black;">
+        <div class="eventContent">
+          <div class="talk">
+            <iframe
+              width="100%"
+              style="margin: 50px 0; min-height: 300px; height: 55vh;"
+              src="https://www.youtube.com/embed/1pkux2P7cnA"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="100%"
+              style="margin: 50px 0; min-height: 300px; height: 55vh;"
+              src="https://www.youtube.com/embed/zW1zrvqsPFc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="100%"
+              style="margin: 50px 0; min-height: 300px; height: 55vh;"
+              src="https://www.youtube.com/embed/eVsj_8SsW8M"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="100%"
+              style="margin: 50px 0; min-height: 300px; height: 55vh;"
+              src="https://www.youtube.com/embed/BjKiwONNEPc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="100%"
+              style="margin: 50px 0; min-height: 300px; height: 55vh;"
+              src="https://www.youtube.com/embed/dqDCrbmolrQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="100%"
+              style="margin: 50px 0; min-height: 300px; height: 55vh;"
+              src="https://www.youtube.com/embed/0vu0Pfpw_HA"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+
     <footer id="footer">
-
       <div class="container d-md-flex py-4">
-  
         <div class="mr-md-auto text-center text-md-left">
           <div class="copyright">
             <a href="https://devsoc.club" target="_blank">
-              <img src="./assets/img/devsoc.png" style="width: 100px;">
+              <img src="./assets/img/devsoc.png" style="width: 100px;" />
             </a>
           </div>
           <div class="credits">
-             Made with ❤️ by <a href="https://devsoc.club" target="_blank">DevSoc</a>
+            Made with ❤️ by
+            <a href="https://devsoc.club" target="_blank">DevSoc</a>
           </div>
         </div>
-  
-        <div class="social-links text-center text-md-right pt-3 pt-md-0" style="margin-top: 10px;">
-          <span style="margin-right: 10px;"> Follow <span style="color: #FF2B06;">TEDx BITSGoa</span> on</span>
-          <br>
-          <br>
+
+        <div
+          class="social-links text-center text-md-right pt-3 pt-md-0"
+          style="margin-top: 10px;"
+        >
+          <span style="margin-right: 10px;">
+            Follow <span style="color: #ff2b06;">TEDx BITSGoa</span> on</span
+          >
+          <br />
+          <br />
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/tedxbitsgoa" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/tedxbitsgoa/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/tedx-bitsgoa/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/tedxbitsgoa" class="facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/tedxbitsgoa/" class="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/tedx-bitsgoa/"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
       </div>
-    </footer><!-- End Footer -->
-
+    </footer>
+    <!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-
-
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -157,7 +220,5 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
